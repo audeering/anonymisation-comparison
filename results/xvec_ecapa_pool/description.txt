@@ -1,0 +1,2 @@
+"x_vec + ecapa" speaker embeddings based pool anonymization
+
