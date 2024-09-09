@@ -5,7 +5,7 @@ Speaker Anonymization System Comparison
 
 Examples of speaker anonymization systems to be used for comparison
 
-Samples are taken from the [Berlin Emodb emotional acted database](https://zenodo.org/records/7447302), namely the samples ['09a02Ea.wav', '09b09Ea.wav', '10a02Fa.wav', '11a02Tc.wav', '12b09Td.wav', '13b09Ab.wav', '13b09La.wav', '09a02La.wav', '10a02Ab.wav', '10a02Wa.wav', '11b09Na.wav', '13a02Nc.wav', '13b09Fb.wav', '14b09Wa.wav']  
+The samples are based on two phrases (a02 and b09) from the [Berlin Emodb emotional acted database](https://zenodo.org/records/7447302), namely the samples ['09a02Ea.wav', '09b09Ea.wav', '10a02Fa.wav', '11a02Tc.wav', '12b09Td.wav', '13b09Ab.wav', '13b09La.wav', '09a02La.wav', '10a02Ab.wav', '10a02Wa.wav', '11b09Na.wav', '13a02Nc.wav', '13b09Fb.wav', '14b09Wa.wav']  
 
 In the figure you see a heatmap for 81 experiments, each time using one of the anonymized databases as well as 4 other international emotion-acted databases as test vs, training set, repectively (keeping predefined splits). Classifiers trained with [pre-trained wav2vec2.0 embeddings](https://huggingface.co/audeering/wav2vec2-large-robust-12-ft-emotion-msp-dim) and a 3-layer MLP. Experiments done with [nkululeko](https://github.com/felixbur/nkululeko) 
 
