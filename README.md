@@ -4,6 +4,12 @@ The samples are based on two phrases (a02 and b09) from the [Berlin Emodb emotio
 
 In the figure you see a heatmap for 81 experiments, each time using one of the anonymized databases as well as 4 other international emotion-acted databases as test vs. training set, repectively (keeping predefined splits). The emotions were unified to the classes *neutral*, *angry*, *happy* and *sad*. Classifiers are trained with [pre-trained wav2vec2.0 embeddings](https://huggingface.co/audeering/wav2vec2-large-robust-12-ft-emotion-msp-dim) and a 3-layer Multi Layer Perceptron. Experiments done with [nkululeko](https://github.com/felixbur/nkululeko) 
 
+The approaches are:
+* **random-splicing**: cutting samples to small chunks and [re-arranging them in random order](http://felix.syntheticspeech.de/publications/Random_splicing_ICASSP-2.pdf)
+* **praat**: gender shift with the [Praat software](https://www.fon.hum.uva.nl/praat/)
+* **praat_randomspliced**: combination of the two above
+* **xvec_ecapa_pool**: shifting latent space embeddings
+
 <img src="images/heatmap.png"/>
 
 |        Name         |                         Description                         | Phrase |                                               neutral                                               |                                               anger                                               |                                               happiness                                               |                                               fear                                               |                                               sadness                                               |                                               boredom                                               |                                               disgust                                               |
