@@ -1,8 +1,3 @@
-
-Speaker Anonymization System Comparison
-=======================================
-
-
 Examples of speaker anonymization systems to be used for comparison
 
 The samples are based on two phrases (a02 and b09) from the [Berlin Emodb emotional acted database](https://zenodo.org/records/7447302), namely the samples ['09a02Ea.wav', '09b09Ea.wav', '10a02Fa.wav', '11a02Tc.wav', '12b09Td.wav', '13b09Ab.wav', '13b09La.wav', '09a02La.wav', '10a02Ab.wav', '10a02Wa.wav', '11b09Na.wav', '13a02Nc.wav', '13b09Fb.wav', '14b09Wa.wav']  
