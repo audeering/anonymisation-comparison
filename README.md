@@ -12,7 +12,7 @@ The approaches are:
 
 <img src="images/heatmap.png"/>
 
-We also did the experiments with a SVM classifier and combined expert features [opensmile eGeMAPS](https://audeering.github.io/opensmile-python/api/opensmile.FeatureSet.html) and [Praat](https://github.com/drfeinberg/PraatScripts). In the next Figure you see the results averaged when being used as test data or training data.
+We also did the experiments with a SVM classifier and combined expert features [opensmile eGeMAPS](https://audeering.github.io/opensmile-python/api/opensmile.FeatureSet.html) and [Praat](https://github.com/drfeinberg/PraatScripts). In the next Figure you see the results (averaged UAR) when being used as test data or training data.
 <img src="images/results.png"/>
 
 So, finally: here are examples for the samples:
