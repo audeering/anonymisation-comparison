@@ -2,7 +2,7 @@ Examples of speaker anonymization approaches with emotional speech samples.
 
 The samples are based on two phrases (a02 and b09) from the [Berlin Emodb emotional acted database](https://zenodo.org/records/7447302).
 
-In the figure you see a heatmap for 81 experiments, each time using one of the anonymized databases as well as 4 other international emotion-acted databases as test vs. training set, repectively (keeping predefined splits). The emotions were unified to the classes *neutral*, *angry*, *happy* and *sad*. Classifiers are trained with [pre-trained wav2vec2.0 embeddings](https://huggingface.co/audeering/wav2vec2-large-robust-12-ft-emotion-msp-dim) and a 3-layer Multi Layer Perceptron. Experiments done with [nkululeko](https://github.com/felixbur/nkululeko) 
+In the figure you see a heatmap for 81 experiments, each time using one of the anonymized databases as well as 4 other international emotion-acted databases as test vs. training set, repectively (keeping predefined splits). The emotions were unified to the classes *neutral*, *angry*, *happy* and *sad*. Classifiers are trained with [pre-trained wav2vec2.0 embeddings](https://huggingface.co/audeering/wav2vec2-**large**-robust-12-ft-emotion-msp-dim) and a 3-layer Multi Layer Perceptron. Experiments done with [nkululeko](https://github.com/felixbur/nkululeko) 
 
 The approaches are:
 * **random-splicing**: cutting samples to small chunks and [re-arranging them in random order](http://felix.syntheticspeech.de/publications/Random_splicing_ICASSP-2.pdf)
@@ -11,6 +11,10 @@ The approaches are:
 * **xvec_ecapa_pool**: shifting latent space embeddings
 
 <img src="images/heatmap.png"/>
+
+We also did the experiments with a SVM classifier and combined expert features [opensmile eGeMAPS](https://audeering.github.io/opensmile-python/api/opensmile.FeatureSet.html) and [Praat](https://github.com/drfeinberg/PraatScripts). In the next Figure you see the results averaged when being used as test data or training data.
+<img src="images/results.png"/>
+
 
 |        Name         |                         Description                         | Phrase |                                               neutral                                               |                                               anger                                               |                                               happiness                                               |                                               fear                                               |                                               sadness                                               |                                               boredom                                               |                                               disgust                                               |
 | :-----------------: | :---------------------------------------------------------: | :----: | :-------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------: |
